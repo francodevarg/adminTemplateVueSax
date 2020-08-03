@@ -3,18 +3,25 @@
     <vs-button flat :active="active == 0" @click="active = 0">
       Active
     </vs-button>
-    <vs-button flat :active="active == 0" @click="active = 0">
+    <!-- <vs-button flat :active="active == 0" @click="active = 0">
       Active
     </vs-button>
     <vs-button flat :active="active == 0" @click="active = 0">
       Active
-    </vs-button>
+    </vs-button> -->
   </div>
 </template>
 
 <script>
 export default {
   name: "Card",
+  props: {
+    active: {
+      required: true,
+      type: Boolean,
+      default: false
+    }
+  }
 };
 </script>
 

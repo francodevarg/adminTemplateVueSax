@@ -22,6 +22,9 @@
     <h1>Titles</h1>
     <vs-row>
       <vs-col w="3">
+        <Card :active="false"> </Card>
+      </vs-col>
+      <!-- <vs-col w="3">
         <Card> </Card>
       </vs-col>
       <vs-col w="3">
@@ -29,25 +32,7 @@
       </vs-col>
       <vs-col w="3">
         <Card> </Card>
-      </vs-col>
-      <vs-col w="3">
-        <Card> </Card>
-      </vs-col>
-    </vs-row>
-    <h1>Others</h1>
-    <vs-row>
-      <vs-col w="3">
-        <Card> </Card>
-      </vs-col>
-      <vs-col w="3">
-        <Card> </Card>
-      </vs-col>
-      <vs-col w="3">
-        <Card> </Card>
-      </vs-col>
-      <vs-col w="3">
-        <Card> </Card>
-      </vs-col>
+      </vs-col> -->
     </vs-row>
   </div>
 </template>
@@ -57,6 +42,6 @@ import Card from "@/components/Card.vue";
 
 export default {
   name: "about",
-  components: { Card },
+  components: { Card }
 };
 </script>
